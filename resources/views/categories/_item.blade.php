@@ -1,0 +1,1 @@
+<span class="mx-2 tracking-widest text-green-500 text-xs font-medium title-font">{{ link_to_route('categories.show', ucfirst($category->title), $category) }}</span>
