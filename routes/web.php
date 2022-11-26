@@ -28,4 +28,3 @@ Route::post('/contact', [ContactController::class, 'send'])->name('contact.send'
 Route::resource('recipes', RecipeController::class)->only('show');
 Route::resource('comments', CommentController::class)->only(['store']);
 Route::resource('categories', CategoryController::class)->only(['show']);
-Auth::routes();
