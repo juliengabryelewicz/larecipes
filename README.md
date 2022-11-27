@@ -17,12 +17,13 @@ L'objectif de projet est d'expérimenter les capacités et pratiques du framewor
 - Providers
 - Vues pour ajouter TinyMCE
 - Laravel Pint
+- Laravel Scout
 - Tests
 
 ## TODO
 
-- Laravel Scout
 - Ajout des ingrédients dans la base de données
 - Localisation
 - API pour les recettes
 - Refactoring
+- Mise en place de composants Vue
