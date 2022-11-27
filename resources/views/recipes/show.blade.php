@@ -46,7 +46,7 @@
     </div>
   </div>
   <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-    <img class="object-cover object-center rounded" alt="hero" src="{{ '/images_recipes/' . $recipe->image }}">
+    <img class="object-cover object-center rounded" alt="{{ $recipe->title }}" src="{{ !empty($recipe->image) ? '/images_recipes/' . $recipe->image : '/images/no-image.jpg' }}">
   </div>
 </div>
 

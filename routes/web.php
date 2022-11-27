@@ -18,8 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
-
 Route::get('/', [RecipeController::class, 'index'])->name('home');
 Route::get('/search', [RecipeController::class, 'search'])->name('search');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
@@ -28,3 +26,5 @@ Route::post('/contact', [ContactController::class, 'send'])->name('contact.send'
 Route::resource('recipes', RecipeController::class)->only('show');
 Route::resource('comments', CommentController::class)->only(['store']);
 Route::resource('categories', CategoryController::class)->only(['show']);
+
+Auth::routes();

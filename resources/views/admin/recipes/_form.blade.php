@@ -11,7 +11,7 @@
 
 <div class="my-4">
     {!! Form::label('image', "Image", ['class' => 'label-form']) !!}
-    {!! Form::file('image', null, ['class' => 'block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400'], 'required') !!}
+    {!! Form::file('image', null, ['class' => 'block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400']) !!}
     <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">Maximum 2 Mo (jpeg, gif, png, svg)</p>
     @error('image')
         <span class="invalid-feedback">{{ $message }}</span>
